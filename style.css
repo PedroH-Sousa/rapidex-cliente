@@ -1,0 +1,104 @@
+:root {
+    --cor-de-fundo: rgb(228, 228, 228); 
+    --cor-do-footer: white;
+    --cor-de-fundo-texto: white;
+    --cor-de-fundo-conteudo: rgba(211, 211, 211, 0.384);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    margin-bottom: 20px;
+}
+
+.img_principal {
+    background-image: url('imagens/deck_logo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    height: 40vh;
+}
+
+.intro {
+    background-color: var(--cor-de-fundo-texto);
+
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid var(--cor-de-fundo-conteudo);
+}
+
+.intro_conteudo {
+    padding: 25px;
+    background-color: var(--cor-de-fundo-conteudo);
+    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.301);
+    border-radius: 20px 0px 20px 0;
+}
+
+.intro_img {
+    width: 20vw;
+    height: 9vh;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.788);
+    
+}
+
+.cardapio {
+    display: flex;
+    background-color: var(--cor-de-fundo-texto);
+    padding-top: 20px;
+    justify-content: center;
+    gap:8%;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--cor-de-fundo-conteudo);
+    align-items: center;
+}
+
+.cardapio_conteudo{
+    width: 60%;
+    background-color: var(--cor-de-fundo-conteudo);
+    border-radius: 20px 0 20px 0;
+
+}
+
+.img_conteudo {
+    width: 20%;
+    height: 9%;
+    border-radius: 50%;
+}
+
+.cardapio_titulo{
+    margin-left: 10px;
+    padding-top: 5px;
+}
+
+.cardapio_texto{
+    font-size: 16px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+
+/*.imagem__principal {
+    width: 100vw;
+    height: 50vh;
+}*/
+
+footer {
+    background-color: var(--cor-do-footer);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    border-top: 2px solid var(--cor-de-fundo-conteudo);
+}

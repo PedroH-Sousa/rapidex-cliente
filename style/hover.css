@@ -1,0 +1,27 @@
+.cardapio:hover {
+    background-color: var(--cor-de-hover);
+}
+
+/*.menu_escolha:checked ~ .lista_escolha {
+    display: block;
+}*/
+
+#menuCalabresa:checked ~ .lista_escolha {
+    display: block;
+}
+
+#menuFrango:checked ~ .lista_escolha {
+    display: block;
+}
+
+#menuQueijo:checked ~ .lista_escolha {
+    display: block;
+}
+
+#menuPep:checked ~ .lista_escolha {
+    display: block;
+}
+
+#menuPort:checked ~ .lista_escolha {
+    display: block;
+}

@@ -1,0 +1,9 @@
+footer {
+    background-color: var(--cor-do-footer);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    border-top: 2px solid var(--cor-de-fundo-conteudo);
+}

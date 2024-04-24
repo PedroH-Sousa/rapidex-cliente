@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rapidex</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/head.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/cardapio.css">
+    <link rel="stylesheet" href="style/hover.css">
     
 </head>
 <body>   
@@ -21,107 +25,192 @@
             <img src="imagens/deck_logo1.png" alt="Deck logo" class="intro_img">
         </section>
 
-        <section class="cardapio">
-            <img src="imagens/pizza_calabresa.jpg" alt="Pizza Calabresa" class="img_conteudo">
-            <div class="cardapio_aba">
-                <div class="cardapio_conteudo">
-                    <h3 class="cardapio_titulo">Pizza Calabresa</h3>
-                    <p class="cardapio_texto">Massa, Molho de Tomate, Queijo Mussarela, Calabresa</p>
-                </div>
-                <div>
-                    <ul class="lista_valor">
-                        <li>35cm - R$69,90</li>
-                        <li>40cm - R$79,90</li>
-                        <li>45cm - R$87,90</li>
-                    </ul>
-                    <div class="numero">
-                        <input type="number" name="fnum" id="fnum" class="num" value="" min="0" max="9">
-                        <input type="button" value="Adicionar" onclick="adicionar()" class="botao_adicionar">
+        <section class="cardapio cardap">
+            <input type="checkbox" id="menuCalabresa" class="menu_escolha">
+            <label for="menuCalabresa" class="menu_escolha_caixa">
+                <div class="cardapio_visivel">
+                    <img src="imagens/pizza_calabresa.jpg" alt="Pizza Calabresa" class="img_conteudo">
+                    <div class="cardapio_aba">
+                        <div class="cardapio_conteudo">
+                            <h3 class="cardapio_titulo">Pizza Calabresa</h3>
+                            <p class="cardapio_texto">Massa, Molho de Tomate, Queijo Mussarela, Calabresa</p>
+                        </div>
+                        <div>
+                            <ul class="lista_valor">
+                                <li>35cm - R$69,90</li>
+                                <li>40cm - R$79,90</li>
+                                <li>45cm - R$87,90</li>
+                            </ul>
+                        </div>
                     </div>
+                </div>
+            </label>
+            <div class="lista_escolha lista_escolha_calabresa">
+                <div class="lista_escolha_preco">
+                
+                    <input type="radio" name="radsex" id="meio" checked>
+                    <label for="meio">0</label>    
+                    <input type="radio" name="radsex" id="meio" checked>
+                    <label for="meio">1/2</label>
+                    <input type="radio" name="radsex" id="inteira">
+                    <label for="inteira">1</label>
+                    <input type="radio" name="radsex" id="dupla" checked>
+                    <label for="dupla">2</label>
+                    <input type="radio" name="radsex" id="trila">
+                    <label for="tripla">3</label>
+
                 </div>
             </div>
         </section>
 
         <section class="cardapio">
-            <img src="imagens/pizza_frango.jpg" alt="Pizza Frango" class="img_conteudo">
-            <div class="cardapio_aba">
-                <div class="cardapio_conteudo">
-                    <h3 class="cardapio_titulo">Pizza Frango & Requeijão</h3>
-                    <p class="cardapio_texto">Massa, Molho de Tomate, Frango desfiado, Requeijão</p>
-                </div>
-                <div>
-                    <ul class="lista_valor">
-                        <li>35cm - R$69,90</li>
-                        <li>40cm - R$79,90</li>
-                        <li>45cm - R$87,90</li>
-                    </ul>
-                    <div class="numero">
-                        <input type="number" name="fnum" id="fnum" class="num" value="" min="0" max="9">
-                        <input type="button" value="Adicionar" onclick="adicionar()" class="botao_adicionar">
+            <input type="checkbox" id="menuFrango" class="menu_escolha">
+            <label for="menuFrango" class="menu_escolha_caixa">
+                <div class="cardapio_visivel">
+                    <img src="imagens/pizza_frango.jpg" alt="Pizza Frango" class="img_conteudo">
+                    <div class="cardapio_aba">
+                        <div class="cardapio_conteudo">
+                            <h3 class="cardapio_titulo">Pizza Frango & Requeijão</h3>
+                            <p class="cardapio_texto">Massa, Molho de Tomate, Frango desfiado, Requeijão</p>
+                        </div>
+                        <div>
+                            <ul class="lista_valor">
+                                <li>35cm - R$69,90</li>
+                                <li>40cm - R$79,90</li>
+                                <li>45cm - R$87,90</li>
+                            </ul>
+                        </div>
                     </div>
+                </div>
+            </label>
+            <div class="lista_escolha">
+                <div class="lista_escolha_preco">
+                 
+                    <input type="radio" name="radsex" id="meio" checked>
+                    <label for="meio">0</label>    
+                    <input type="radio" name="radsex" id="meio" checked>
+                    <label for="meio">1/2</label>
+                    <input type="radio" name="radsex" id="inteira">
+                    <label for="inteira">1</label>
+                    <input type="radio" name="radsex" id="dupla" checked>
+                    <label for="dupla">2</label>
+                    <input type="radio" name="radsex" id="trila">
+                    <label for="tripla">3</label>
+
                 </div>
             </div>
         </section>
 
         <section class="cardapio">
-            <img src="imagens/pizza_queijo.jpg" alt="Pizza 4 Queijos" class="img_conteudo">
-            <div class="cardapio_aba">
-                <div class="cardapio_conteudo">
-                    <h3 class="cardapio_titulo">Pizza 4 Queijos</h3>
-                    <p class="cardapio_texto">Massa, Molho de Tomate, Queijos: Parmesão, Gorgonzola, Mussarela, Cheddar</p>
-                </div>
-                <div>
-                    <ul class="lista_valor">
-                        <li>35cm - R$69,90</li>
-                        <li>40cm - R$79,90</li>
-                        <li>45cm - R$87,90</li>
-                    </ul>
-                    <div class="numero">
-                        <input type="number" name="fnum" id="fnum" class="num" value="" min="0" max="9">
-                        <input type="button" value="Adicionar" onclick="adicionar()" class="botao_adicionar">
+            <input type="checkbox" id="menuQueijo" class="menu_escolha">
+            <label for="menuQueijo" class="menu_escolha_caixa">
+                <div class="cardapio_visivel">
+                    <img src="imagens/pizza_queijo.jpg" alt="Pizza 4 Queijos" class="img_conteudo">
+                    <div class="cardapio_aba">
+                        <div class="cardapio_conteudo">
+                            <h3 class="cardapio_titulo">Pizza 4 Queijos</h3>
+                            <p class="cardapio_texto">Massa, Molho de Tomate, Queijos: Parmesão, Gorgonzola, Mussarela, Cheddar</p>
+                        </div>
+                        <div>
+                            <ul class="lista_valor">
+                                <li>35cm - R$69,90</li>
+                                <li>40cm - R$79,90</li>
+                                <li>45cm - R$87,90</li>
+                            </ul>
+                        </div>
                     </div>
+                </div>
+            </label>
+            <div class="lista_escolha">
+                <div class="lista_escolha_preco">
+
+                    <input type="radio" name="radsex" id="meio" checked>
+                    <label for="meio">0</label>    
+                    <input type="radio" name="radsex" id="meio" checked>
+                    <label for="meio">1/2</label>
+                    <input type="radio" name="radsex" id="inteira">
+                    <label for="inteira">1</label>
+                    <input type="radio" name="radsex" id="dupla" checked>
+                    <label for="dupla">2</label>
+                    <input type="radio" name="radsex" id="trila">
+                    <label for="tripla">3</label>
+
                 </div>
             </div>
         </section>
 
         <section class="cardapio">
-            <img src="imagens/pizza_peperoni.jpg" alt="Pizza Peperoni & Bacon" class="img_conteudo">
-            <div class="cardapio_aba">
-                <div class="cardapio_conteudo">
-                    <h3 class="cardapio_titulo">Pizza Peperoni & Bacon</h3>
-                    <p class="cardapio_texto">Massa, Molho de Tomate, Mussarela, Peperoni, Bacon</p>
-                </div>
-                <div>
-                    <ul class="lista_valor">
-                        <li>35cm - R$69,90</li>
-                        <li>40cm - R$79,90</li>
-                        <li>45cm - R$87,90</li>
-                    </ul>
-                    <div class="numero">
-                        <input type="number" name="fnum" id="fnum" class="num" value="" min="0" max="9">
-                        <input type="button" value="Adicionar" onclick="adicionar()" class="botao_adicionar">
+            <input type="checkbox" id="menuPep" class="menu_escolha">
+            <label for="menuPep" class="menu_escolha_caixa">
+                <div class="cardapio_visivel">
+                    <img src="imagens/pizza_peperoni.jpg" alt="Pizza Peperoni & Bacon" class="img_conteudo">
+                    <div class="cardapio_aba">
+                        <div class="cardapio_conteudo">
+                            <h3 class="cardapio_titulo">Pizza Peperoni & Bacon</h3>
+                            <p class="cardapio_texto">Massa, Molho de Tomate, Mussarela, Peperoni, Bacon</p>
+                        </div>
+                        <div>
+                            <ul class="lista_valor">
+                                <li>35cm - R$69,90</li>
+                                <li>40cm - R$79,90</li>
+                                <li>45cm - R$87,90</li>
+                            </ul>
+                        </div>
                     </div>
+                </div>
+            </label>
+            <div class="lista_escolha">
+                <div class="lista_escolha_preco">
+
+                    <input type="radio" name="radsex" id="meio" checked>
+                    <label for="meio">0</label>    
+                    <input type="radio" name="radsex" id="meio" checked>
+                    <label for="meio">1/2</label>
+                    <input type="radio" name="radsex" id="inteira">
+                    <label for="inteira">1</label>
+                    <input type="radio" name="radsex" id="dupla" checked>
+                    <label for="dupla">2</label>
+                    <input type="radio" name="radsex" id="trila">
+                    <label for="tripla">3</label>
+
                 </div>
             </div>
         </section>
 
         <section class="cardapio">
-            <img src="imagens/pizza_portuguesa.jpg" alt="Pizza Portuguesa" class="img_conteudo">
-            <div class="cardapio_aba">
-                <div class="cardapio_conteudo">
-                    <h3 class="cardapio_titulo">Pizza Portuguesa</h3>
-                    <p class="cardapio_texto">Massa, Molho de Tomate, Mussarela, Tomate, Bacon, Ovo, Azeitona, Calabresa</p>
-                </div>
-                <div>
-                    <ul class="lista_valor">
-                        <li>35cm - R$69,90</li>
-                        <li>40cm - R$79,90</li>
-                        <li>45cm - R$87,90</li>
-                    </ul>
-                    <div class="numero">
-                        <input type="number" name="fnum" id="fnum" class="num" value="" min="0" max="9">
-                        <input type="button" value="Adicionar" onclick="adicionar()" class="botao_adicionar">
+            <input type="checkbox" id="menuPort" class="menu_escolha">
+            <label for="menuPort" class="menu_escolha_caixa">
+                <div class="cardapio_visivel">
+                    <img src="imagens/pizza_portuguesa.jpg" alt="Pizza Portuguesa" class="img_conteudo">
+                    <div class="cardapio_aba">
+                        <div class="cardapio_conteudo">
+                            <h3 class="cardapio_titulo">Pizza Portuguesa</h3>
+                            <p class="cardapio_texto">Massa, Molho de Tomate, Mussarela, Tomate, Bacon, Ovo, Azeitona, Calabresa</p>
+                        </div>
+                        <div>
+                            <ul class="lista_valor">
+                                <li>35cm - R$69,90</li>
+                                <li>40cm - R$79,90</li>
+                                <li>45cm - R$87,90</li>
+                            </ul>
+                        </div>
                     </div>
+                </div>
+            </label>
+            <div class="lista_escolha">
+                <div class="lista_escolha_preco">
+
+                    <input type="radio" name="radsex" id="meio" checked>
+                    <label for="meio">0</label>    
+                    <input type="radio" name="radsex" id="meio" checked>
+                    <label for="meio">1/2</label>
+                    <input type="radio" name="radsex" id="inteira">
+                    <label for="inteira">1</label>
+                    <input type="radio" name="radsex" id="dupla" checked>
+                    <label for="dupla">2</label>
+                    <input type="radio" name="radsex" id="trila">
+                    <label for="tripla">3</label>
+
                 </div>
             </div>
         </section>

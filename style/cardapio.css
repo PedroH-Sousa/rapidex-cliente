@@ -73,6 +73,7 @@
 .escolha_pedido {
     display: flex;
     gap: 7%;
+    align-items: center;
 }
 
 .tamanhoPizza {
@@ -101,7 +102,8 @@
     display: flex;
     justify-content: space-around;
     gap: 4%;
-    margin-top: 28px;
+    margin-top: 15px;
+    padding-bottom: 10px;
     text-align: left;
     align-items: center;
     

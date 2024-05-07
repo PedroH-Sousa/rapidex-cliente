@@ -6,4 +6,29 @@ footer {
     bottom: 0px;
     width: 100vw;
     border-top: 2px solid var(--cor-de-fundo-conteudo);
+    
+
+    
+        display: flex; /* Torna o footer flexível */
+        align-items: center; /* Alinha verticalmente o conteúdo */
+        justify-content: center; /* Centraliza horizontalmente o conteúdo */
+        padding: 20px 0; /* Adicione o preenchimento conforme necessário */
+        background-color: #f0f0f0; /* Adicione a cor de fundo conforme necessário */
+        border-top: 1px solid #ccc; /* Adicione uma borda superior conforme necessário */
+        flex-direction: column;
+        gap: 10px;
+
+}
+
+/* Estilo para o botão de limpar */
+button#limparBotao {
+    margin-top: 0px; /* Espaço entre o botão e o conteúdo */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    background-color: #fca785; /* Cor de fundo verde */
+    color: rgb(0, 0, 0); /* Cor do texto branco */
+    font-weight: 700;
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor de ponteiro ao passar por cima */
+    transition: background-color 0.3s; /* Transição suave da cor de fundo */
 }
